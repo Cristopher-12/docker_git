@@ -1,0 +1,21 @@
+{% extends './base.html' %}
+
+
+
+{% block title %} Index {% endblock %}
+
+
+
+{% block body %}
+
+<h1>¿Que es un contenedor?</h1>
+
+<h3>
+    <br>
+    Los contenedores de servicios son contenedores de Docker que ofrecen una manera sencilla y portátil de alojar servicios que probablemente necesites para probar o usar tu aplicación en un flujo de trabajo. Por ejemplo, es posible que tu flujo de trabajo tenga que ejecutar pruebas de integración que requieran acceso a una base de datos y a una memoria caché.
+    <br>
+    <br>
+    Puedes configurar contenedores de servicios para cada trabajo en un flujo de trabajo. GitHub crea un contenedor de Docker nuevo para cada servicio configurado en el flujo de trabajo y destruye el contenedor de servicios cuando se termina el trabajo. Los pasos de un trabajo pueden comunicarse con todos los contenedores de servicios que son parte del mismo trabajo.
+</h3>
+
+{% endblock %}
